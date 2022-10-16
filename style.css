@@ -87,7 +87,6 @@ section h4{
 }
 .first-caracter{
     width: 50%;
-    max-width: 50%;
     margin-left: 15%;
 }
 input[type=radio]{
@@ -108,7 +107,6 @@ input[type=radio]:checked + label{
 }
 .others-caracter{
     width: 50%;
-    max-width: 50%;
 }
 .flex{
     margin-top: 3rem;
@@ -186,4 +184,46 @@ footer{
 }
 footer p{
     font-size: 1.1rem;
+}
+/*media queries*/
+@media screen and (max-width: 800px){
+    .ul-nav{
+        display: block;
+        position: relative;
+        margin-top: 2rem;
+    }
+    .ul-nav li{
+        margin-top: 2rem;
+    }
+    .options{
+        flex-wrap: wrap;
+    }
+    .first-caracter{
+        width: 100%;
+    }
+    .others-caracter{
+        width: 100%;
+        margin-top: 2rem;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #return{
+        width: 80%;
+        padding: 1rem;
+    }
+    #tamanho{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 410px){
+    input[type=radio]{
+        display: block;
+    }
+    .logo{
+        display: block;
+        position: relative;
+    }
 }
