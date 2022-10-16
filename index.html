@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Gerador de senhas</title>
+        <meta charset="utf-8">
+        <meta name="author" content="paulo melos">
+        <meta name="descriptions" content="projeto gerador de senhas projeto feito em javascript,paulo melos">
+        <meta name="keywords" content="projeto,js,javascript,html,css,gerador senhas,paulo melos">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css"></link>
+        <link rel="stylesheet" href="fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h2 class="logo">Generator Online <i class="fa-solid fa-lock"></i></h2>
+                <ul class="ul-nav">
+                    <li><a href="https://github.com/pauloesmelos" target="_blank">Github</a></li>
+                    <li><a href="https://github.com/pauloesmelos" target="_blank">DEV</a></li>
+                    <li><a href="https://www.linkedin.com/in/pauloeduardomelos/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/pauloesmelos/password-generator-javascript" target="_blank">Projeto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Senhas aleatórias baseada nos caracteres de <span>preferência</span> e no <span>tamanho</span>.</h1>
+                <h4><i class="fa-solid fa-circle-info"></i>O tamanho máximo das senhas foi setado para 20 caracteres.</h4>
+                <div class="options">
+                    <div class="first-caracter">
+                        <h2>Primeiro caracter</h2>
+                        <div class="flex">
+                            <input id="num" type="radio" name="fst" value="numeral">
+                            <label for="num">Número</label>
+                            <input id="maisc" type="radio" name="fst" value="maiscula">
+                            <label for="maisc">Maiúsculo</label>
+                            <input id="minusc" type="radio" name="fst" value="minuscula">
+                            <label for="minusc">Minúsculo</label>
+                        </div>
+                    </div>
+                    <div class="others-caracter">
+                        <h2>Outros caracteres</h2>
+                        <div class="flex">
+                            <input id="num2" type="radio" name="others" value="numeral2">
+                            <label for="num2">Número</label>
+                            <input id="maisc2" type="radio" name="others" value="maiscula2">
+                            <label for="maisc2">Maiúsculo</label>
+                            <input id="minusc2" type="radio" name="others" value="minuscula2">
+                            <label for="minusc2">Minúsculo</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="tamanho">
+                    <h2>Informe o tamanho da senha</h2>
+                    <input type="number" name="tam" id="tamanho" placeholder="Informe aqui" min="2" max="20" required>
+                </div>
+            </section>
+            <hr class="hr-final">
+            <section class="result">
+                <input type="text" id="return" name="return" placeholder="Senha final" contenteditable="false">
+                <button class="button-gerar">Gerar senha</button>
+            </section>
+        </main>
+        <footer>
+            <p>2022 &copy; feito por paulomelos <3</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    
+</html>
