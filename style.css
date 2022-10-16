@@ -218,7 +218,7 @@ footer p{
     }
 }
 
-@media screen and (max-width: 410px){
+@media screen and (max-width: 445px){
     input[type=radio]{
         display: block;
     }
